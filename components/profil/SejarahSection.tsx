@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
-// Gambar Unsplash: panorama desa Jawa / candi / sawah
-const BANNER_URL =
-  "https://images.unsplash.com/photo-1596402184320-417e7178b2cd?w=1600&q=80&auto=format&fit=crop";
+// Foto sejarah / wayangan lokal dari folder public
+const BANNER_URL = "/bg-sejarah.jpg";
 
 export function SejarahSection() {
   return (
@@ -18,11 +17,11 @@ export function SejarahSection() {
         Sejarah Padukuhan Sempu
       </h1>
 
-      {/* Banner gambar lebar — Unsplash, bukan placeholder */}
-      <div className="relative w-full aspect-[21/9] sm:aspect-[24/9] overflow-hidden rounded-3xl shadow-xl mb-10 sm:mb-14">
+      {/* Banner gambar lebar dengan bingkai rounded-3xl, shadow-xl, dan object-cover */}
+      <div className="relative w-full aspect-[21/9] sm:aspect-[24/9] overflow-hidden rounded-3xl shadow-xl border border-stone-100 mb-10 sm:mb-14">
         <Image
           src={BANNER_URL}
-          alt="Panorama Padukuhan Sempu"
+          alt="Wayangan Sejarah Padukuhan Sempu"
           fill
           priority
           sizes="100vw"

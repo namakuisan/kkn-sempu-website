@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, MapPin, ChevronRight } from "lucide-react";
+import { MapPin, ChevronRight } from "lucide-react";
 
 import logoUii from "@/public/logo-uii.png";
 import logoKkn from "@/public/logo-kkn.jpg";
@@ -32,12 +32,12 @@ export function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone size={18} className="text-emerald-500 shrink-0" />
-                <span>+62 812-3456-7890 (WA Admin Desa)</span>
+                
+                <span></span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail size={18} className="text-emerald-500 shrink-0" />
-                <span>pemdes.sempu@gmail.com</span>
+                
+                <span></span>
               </li>
             </ul>
           </div>

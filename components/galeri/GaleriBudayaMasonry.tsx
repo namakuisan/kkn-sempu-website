@@ -34,12 +34,12 @@ export function GaleriBudayaMasonry() {
       category: "TRADISI",
       aspectRatio: "aspect-[3/4]",
       images: [
-        "/maulid-1-v2.jpg",
-        "/maulid-2.jpg",
-        "/maulid-3.jpg",
-        "/maulid-4.jpg",
-        "/maulid-5.jpg",
-        "/maulid-6.jpg",
+        "/maulid-1-v3.jpg",
+        "/maulid-2-v2.jpg",
+        "/maulid-3-v2.jpg",
+        "/maulid-4-v2.jpg",
+        "/maulid-5-v2.jpg",
+        "/maulid-6-v2.jpg",
       ],
     },
     {
@@ -49,7 +49,7 @@ export function GaleriBudayaMasonry() {
       category: "KEGIATAN",
       aspectRatio: "aspect-[4/3]",
       images: [
-        "/rapat-1.jpg",
+        "/rapat-1-v2.jpg",
       ],
     },
     {
@@ -59,10 +59,10 @@ export function GaleriBudayaMasonry() {
       category: "TRADISI",
       aspectRatio: "aspect-[3/5]",
       images: [
-        "/wayangan-sempu-1-v2.jpg",
-        "/wayangan-sempu-2.jpg",
-        "/wayangan-sempu-3.jpg",
-        "/wayangan-gandok-1.jpg",
+        "/wayangan-sempu-1-v3.jpg",
+        "/wayangan-sempu-2-v2.jpg",
+        "/wayangan-sempu-3-v2.jpg",
+        "/wayangan-gandok-1-v2.jpg",
         "/wayangan-gandok-2.jpeg",
       ],
     },
@@ -73,11 +73,11 @@ export function GaleriBudayaMasonry() {
       category: "KEGIATAN",
       aspectRatio: "aspect-[4/3]",
       images: [
-        "/kerja-bakti-1.jpg",
-        "/kerja-bakti-2.jpg",
+        "/kerja-bakti-1-v2.jpg",
+        "/kerja-bakti-2-v2.jpg",
         "/kerja-bakti-3.jpg",
-        "/kerja-bakti-4.jpg",
-        "/kerja-bakti-5.jpg",
+        "/kerja-bakti-4-v2.jpg",
+        "/kerja-bakti-5-v2.jpg",
       ],
     },
     {
@@ -87,9 +87,9 @@ export function GaleriBudayaMasonry() {
       category: "KEGIATAN",
       aspectRatio: "aspect-[4/3]",
       images: [
-        "/posyandu-1.jpg",
-        "/posyandu-2.jpg",
-        "/posyandu-3.jpg",
+        "/posyandu-1-v2.jpg",
+        "/posyandu-2-v2.jpg",
+        "/posyandu-3-v2.jpg",
       ],
     },
     {
@@ -99,10 +99,10 @@ export function GaleriBudayaMasonry() {
       category: "KEGIATAN",
       aspectRatio: "aspect-[4/3]",
       images: [
-        "/tpa-1.jpg",
-        "/tpa-2.jpg",
-        "/tpa-3.jpg",
-        "/tpa-4.jpg",
+        "/tpa-1-v2.jpg",
+        "/tpa-2-v2.jpg",
+        "/tpa-3-v2.jpg",
+        "/tpa-4-v2.jpg",
       ],
     },
   ];

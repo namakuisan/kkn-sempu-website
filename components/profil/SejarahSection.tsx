@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 // Foto sejarah / wayangan lokal dari folder public
-const BANNER_URL = "/bg-sejarah.jpg";
+const BANNER_URL = "/bg-sejarah-v2.jpg";
 
 export function SejarahSection() {
   return (

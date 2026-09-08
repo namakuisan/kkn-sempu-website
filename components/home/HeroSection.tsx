@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Play } from "lucide-react";
 
 // Static import background hero untuk performa (LCP) dan placeholder="blur"
-import heroBg from "@/public/IMG_7659.jpg";
+import heroBg from "@/public/IMG_7659-v2.jpg";
 
 const VIDEO_THUMB =
   "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=80&auto=format&fit=crop";

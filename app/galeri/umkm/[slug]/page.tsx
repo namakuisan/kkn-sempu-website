@@ -8,6 +8,10 @@ import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { getUMKMBySlug, getAllUMKMSlugs } from "@/lib/api/umkm";
 import { ArrowLeft, MapPin, Store, Tag, Phone } from "lucide-react";
 
+// Revalidasi ISR setiap 60 detik & izinkan produk UMKM baru yang belum di-build diakses on-demand
+export const revalidate = 60;
+export const dynamicParams = true;
+
 // ---------------------------------------------------------------------------
 // generateStaticParams — SSG: pra-render semua halaman detail UMKM saat build
 // ---------------------------------------------------------------------------

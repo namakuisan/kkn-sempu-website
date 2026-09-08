@@ -1,6 +1,9 @@
 import { GaleriBudayaMasonry } from "@/components/galeri/GaleriBudayaMasonry";
 import { DirektoriUMKM } from "@/components/galeri/DirektoriUMKM";
 
+// Revalidasi ISR setiap 60 detik agar direktori UMKM dari Contentful ter-refresh otomatis
+export const revalidate = 60;
+
 export default function GaleriPage() {
   return (
     <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-8 sm:pt-12 pb-20">

@@ -2,6 +2,9 @@ import { HeroSection } from "@/components/home/HeroSection";
 import { QuickLinks } from "@/components/home/QuickLinks";
 import { LatestHighlights } from "@/components/home/LatestHighlights";
 
+// Revalidasi ISR setiap 60 detik agar data Contentful terbaru ter-refresh otomatis
+export const revalidate = 60;
+
 export default function Home() {
   return (
     <div className="flex-1 flex flex-col">

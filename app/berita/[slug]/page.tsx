@@ -13,6 +13,10 @@ import { getArtikelBySlug, getAllArtikelSlugs, getArtikelTerbaru } from "@/lib/a
 import type { ArtikelEntry } from "@/lib/contentful.types";
 import { ArrowLeft, Calendar, User, Tag } from "lucide-react";
 
+// Revalidasi ISR setiap 60 detik & izinkan artikel baru yang belum di-build diakses on-demand
+export const revalidate = 60;
+export const dynamicParams = true;
+
 // ---------------------------------------------------------------------------
 // generateStaticParams — SSG: pra-render semua halaman artikel saat build
 // ---------------------------------------------------------------------------

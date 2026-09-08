@@ -5,6 +5,9 @@ import { ArrowRight, Calendar } from "lucide-react";
 import { getAllArtikel } from "@/lib/api/artikel";
 import type { ArtikelEntry } from "@/lib/contentful.types";
 
+// Revalidasi ISR setiap 60 detik agar berita baru dari Contentful muncul otomatis di Vercel
+export const revalidate = 60;
+
 // Unsplash fallback untuk artikel tanpa thumbnail dari CMS
 const UNSPLASH_FALLBACKS = [
   "https://images.unsplash.com/photo-1432847712612-926caafaa802?w=800&q=75&auto=format&fit=crop",

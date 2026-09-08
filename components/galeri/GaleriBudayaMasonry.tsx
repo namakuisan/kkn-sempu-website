@@ -24,7 +24,7 @@ export function GaleriBudayaMasonry() {
     "KRIYA",
   ];
 
-  // Menggunakan gambar Unsplash beresolusi tinggi sesuai instruksi
+  // Menggunakan gambar lokal placeholder sesuai instruksi
   const items: GalleryItem[] = [
     {
       id: "1",
@@ -32,7 +32,7 @@ export function GaleriBudayaMasonry() {
       description: "Penampilan memukau pada puncak acara Merti Dusun Sempu.",
       category: "TRADISI",
       aspectRatio: "aspect-[3/4]",
-      imageUrl: "https://images.unsplash.com/photo-1585503418537-88331351ad99?w=800&q=80&auto=format&fit=crop",
+      imageUrl: "/blank-picture.jpg",
     },
     {
       id: "2",
@@ -40,7 +40,7 @@ export function GaleriBudayaMasonry() {
       description: "Proses detail pembuatan ukiran tradisional khas Sempu oleh pengrajin lokal.",
       category: "KRIYA",
       aspectRatio: "aspect-[4/3]",
-      imageUrl: "https://images.unsplash.com/photo-1601058268499-e52658b8bb88?w=800&q=80&auto=format&fit=crop",
+      imageUrl: "/blank-picture.jpg",
     },
     {
       id: "3",
@@ -48,7 +48,7 @@ export function GaleriBudayaMasonry() {
       description: "Prosesi sakral arak-arakan gunungan hasil bumi mengelilingi desa.",
       category: "TRADISI",
       aspectRatio: "aspect-[3/5]",
-      imageUrl: "https://images.unsplash.com/photo-1549880181-56a44cf4a9a5?w=800&q=80&auto=format&fit=crop",
+      imageUrl: "/blank-picture.jpg",
     },
     {
       id: "4",
@@ -56,7 +56,7 @@ export function GaleriBudayaMasonry() {
       description: "Kegiatan kerja bakti rutin warga untuk membersihkan saluran air dan fasilitas umum.",
       category: "KEGIATAN",
       aspectRatio: "aspect-[4/3]",
-      imageUrl: "https://images.unsplash.com/photo-1593113565694-c689b9359e19?w=800&q=80&auto=format&fit=crop",
+      imageUrl: "/blank-picture.jpg",
     },
     {
       id: "5",
@@ -64,7 +64,7 @@ export function GaleriBudayaMasonry() {
       description: "Pembuatan kain tenun dengan alat tradisional oleh ibu-ibu PKK Padukuhan Sempu.",
       category: "KRIYA",
       aspectRatio: "aspect-[3/4]",
-      imageUrl: "https://images.unsplash.com/photo-1605814578148-9c165d75d278?w=800&q=80&auto=format&fit=crop",
+      imageUrl: "/blank-picture.jpg",
     },
     {
       id: "6",
@@ -72,7 +72,7 @@ export function GaleriBudayaMasonry() {
       description: "Pemeriksaan kesehatan gratis dan senam bersama lansia setiap bulan.",
       category: "KEGIATAN",
       aspectRatio: "aspect-[4/3]",
-      imageUrl: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&q=80&auto=format&fit=crop",
+      imageUrl: "/blank-picture.jpg",
     },
     {
       id: "7",
@@ -80,7 +80,7 @@ export function GaleriBudayaMasonry() {
       description: "Persiapan latihan rutin kesenian gamelan oleh para pemuda Sempu.",
       category: "TRADISI",
       aspectRatio: "aspect-[4/3]",
-      imageUrl: "https://images.unsplash.com/photo-1518155317743-159d3e8e2c7c?w=800&q=80&auto=format&fit=crop",
+      imageUrl: "/blank-picture.jpg",
     },
   ];
 

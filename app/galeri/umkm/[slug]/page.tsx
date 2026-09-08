@@ -112,7 +112,7 @@ export default async function UMKMDetailPage({
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
         {/* KIRI: Gambar (5 kolom) */}
-        <div className="lg:col-span-5 sticky top-28">
+        <div className="lg:col-span-5 lg:sticky lg:top-28">
           <div className="relative w-full aspect-square overflow-hidden rounded-3xl border border-stone-200 shadow-xl bg-white">
             <Image
               src={gambarUrl}

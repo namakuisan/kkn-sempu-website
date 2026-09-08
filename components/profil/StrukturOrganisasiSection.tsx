@@ -1,30 +1,23 @@
 import React from "react";
 import Image from "next/image";
 
-// Foto potret orang dari Unsplash — nuansa profesional/natural
-const PORTRAIT_PHOTOS: Record<string, string> = {
-  "Kepala Padukuhan": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&q=80&auto=format&fit=crop&crop=face",
-  "Ketua RW 01":     "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&q=80&auto=format&fit=crop&crop=face",
-  "Ketua RW 02":     "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&q=80&auto=format&fit=crop&crop=face",
-  "Ketua RT 01":     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&q=80&auto=format&fit=crop&crop=face",
-  "Ketua RT 02":     "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&q=80&auto=format&fit=crop&crop=face",
-  "Ketua RT 03":     "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=200&h=200&q=80&auto=format&fit=crop&crop=face",
-};
+interface PerangkatDesa {
+  name: string;
+  title: string;
+  image: string;
+}
 
-const FALLBACK_AVATAR =
-  "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&q=80&auto=format&fit=crop&crop=face";
-
-const members = [
-  { name: "Bapak Ibnu Arif Nugroho", title: "Kepala Padukuhan Sempu" },
-  { name: "Bapak Suratmin", title: "Ketua RW 24" },
-  { name: "Bapak Subarjo",    title: "Ketua RW 25" },
-  { name: "Bapak Sunardi",    title: "Ketua RT 01" },
-  { name: "Bapak Gunardi",      title: "Ketua RT 02" },
-  { name: "Bapak Subardiyan",    title: "Ketua RT 03" },
-  {name: "Bapak Sugiyanto",    title: "Ketua RT 04" },
-  {name: "Bapak Untung",    title: "Ketua RT 05" },
-  {name: "Bapak Djarwanto",    title: "Ketua RT 06" },
-  {name: "Bapak Suleman",    title: "Ketua RT 07" },
+const members: PerangkatDesa[] = [
+  { name: "Bapak Ibnu Arif Nugroho", title: "Kepala Padukuhan Sempu", image: "/blank-profile.png" },
+  { name: "Bapak Suratmin", title: "Ketua RW 24", image: "/blank-profile.png" },
+  { name: "Bapak Subarjo", title: "Ketua RW 25", image: "/blank-profile.png" },
+  { name: "Bapak Sunardi", title: "Ketua RT 01", image: "/blank-profile.png" },
+  { name: "Bapak Gunardi", title: "Ketua RT 02", image: "/blank-profile.png" },
+  { name: "Bapak Subardiyan", title: "Ketua RT 03", image: "/blank-profile.png" },
+  { name: "Bapak Sugiyanto", title: "Ketua RT 04", image: "/blank-profile.png" },
+  { name: "Bapak Untung", title: "Ketua RT 05", image: "/blank-profile.png" },
+  { name: "Bapak Djarwanto", title: "Ketua RT 06", image: "/blank-profile.png" },
+  { name: "Bapak Suleman", title: "Ketua RT 07", image: "/blank-profile.png" },
 ];
 
 export function StrukturOrganisasiSection() {
@@ -43,7 +36,6 @@ export function StrukturOrganisasiSection() {
       {/* Grid 4-kolom desktop, 2 mobile */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
         {members.map((member, index) => {
-          const photoUrl = PORTRAIT_PHOTOS[member.title] ?? FALLBACK_AVATAR;
           const isHead = index === 0;
 
           return (
@@ -59,14 +51,14 @@ export function StrukturOrganisasiSection() {
               <div
                 className={`relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden mb-4 ring-4 ${
                   isHead ? "ring-amber-400" : "ring-stone-100 group-hover:ring-emerald-200"
-                } transition-all duration-300 shadow-md`}
+                } transition-all duration-300 shadow-md bg-stone-100`}
               >
                 <Image
-                  src={photoUrl}
+                  src={member.image}
                   alt={member.name}
                   fill
                   sizes="96px"
-                  className="object-cover object-top"
+                  className="object-cover"
                 />
               </div>
 
